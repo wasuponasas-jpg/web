@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            WEB
+        </title>
+    </head>
+    <body>
+        <video id="rickroll" width="400">
+            <source src="A.mp4" type="video/mp4" >
+            Your browser does not support the video tag.
+        </video>
+        <img  onclick="SSSa()" src="Button 2.png" width="200">
+        <h1 style="color: rgb(59, 40, 65);" >
+            Click pls to get some free robux
+        </h1>
+    
+    </body>
+    <style>
+        #rickroll{
+            display:none
+        }
+    </style>
+    <script>
+        function SSSa() {
+    var video = document.getElementById("rickroll");
+
+    video.style.display = "block"
+    video.play();
+
+    if (video.requestFullscreen) {
+        video.requestFullscreen();
+    } else if (video.webkitRequestFullscreen) { // Safari
+        video.webkitRequestFullscreen();
+    } else if (video.msRequestFullscreen) { // IE11
+        video.msRequestFullscreen();
+    }
+}
+    </script>
+</html>
